@@ -1,4 +1,15 @@
 # Transparency-by-Design networks (TbD-nets)
+
+### Note: 
+Extract features using clevr new train-train_val-val split.
+Change the extract features script to save idx2imgpath dic for train-val.
+For preprocess_questions.py:
+On L71 and L142: change q['answer'] to str(q['answer'])
+
+In programs.py: replace all 'function' instances with 'type' to work with new clevr programs.
+
+
+
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/davidmascharka/tbd-nets/binder?filepath=full-vqa-example.ipynb)
 ![Python version support](https://img.shields.io/badge/python-3.5%20%203.6-blue.svg)
 ![PyTorch version support](https://img.shields.io/badge/pytorch-0.2%200.3%200.4-red.svg)
